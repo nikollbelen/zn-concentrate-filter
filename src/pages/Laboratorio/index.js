@@ -7,9 +7,11 @@ import Menu from "../../components/VergeMenu";
 import IconButtons from "../../components/VergeAyudas";
 import ModalObjetivos from "../../components/VergeModalObjetivos";
 import ModalAyuda from "../../components/VergeModalAyuda";
+import ModalAyudaMovil from "../../components/VergeModalAyudaMovil";
 import ModalEquipo from "../../components/VergeModalEquipo";
 import ModalInformacion from "../../components/VergeModalInformacion";
 import VergeBotonRetroceso from "../../components/VergeBotonRetroceso";
+import VergePantallaMobile from "../../components/VergePantallaMobile";
 
 function Laboratorio() {
   
@@ -38,7 +40,9 @@ const menuItems = [
         defaultValue="0"
         style={{ display: "none" }}
       />
+      <VergePantallaMobile />
       <ModalAyuda />
+      <ModalAyudaMovil />
       <ModalObjetivos />
       <ModalEquipo />
       <ModalInformacion />

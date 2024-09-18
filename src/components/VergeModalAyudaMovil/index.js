@@ -74,25 +74,25 @@ const Description = styled.div`
 `;
 
 // Componente principal
-const ModalAyuda = () => {
+const ModalAyudaMovil = () => {
   return (
-    <CenteredContainer id='ayuda' className="content content1" style={{ zIndex: 30 }}>
-      <CardContainer id='ayudaContainer' className="content content1">
+    <CenteredContainer id='ayudaMovil' className="content content1" style={{ zIndex: 30 }}>
+      <CardContainer id='ayudaMovilContainer' className="content content1">
         <Card>
-          <Image src="/images/mouse1.png" alt="Imagen 1" />
-          <Description><p className='en'>To rotate and move through the laboratory views, use the left mouse button.</p><p className='es'>Para rotar y desplazarse por las vistas del laboratorio utilice el botón izquierdo del mouse</p></Description>
+          <Image src="/images/paso1.png" alt="Imagen 1" />
+          <Description><p className='en'>ory views, use the left mouse button.</p><p className='es'>Para poder ver el escenario fijamente desde diferentes direcciones, asegúrese de mover sus dedos sobre la pantalla.</p></Description>
         </Card>
         <Card>
-          <Image src="/images/mouse2.png" alt="Imagen 2" />
-          <Description><p className='en'>To move right or up, press the right mouse button or the physical arrow keys ↑ ↓ → ←.</p><p className='es'>Para desplazarse hacia la derecha o arriba presione el botón derecho del mouse o las teclas físicas ↑ ↓ → ←</p></Description>
+          <Image src="/images/paso2.png" alt="Imagen 2" />
+          <Description><p className='en'>button or the physical arrow keys ↑ ↓ → ←.</p><p className='es'>Para acercar o alejar las vistas del modulo interactivo utilice sus dos dedos.</p></Description>
         </Card>
         <Card>
-          <Image src="/images/mouse3.png" alt="Imagen 3" />
-          <Description><p className='en'>To zoom in or out on the laboratory views, use the mouse wheel.</p><p className='es'>Para acercar o alejar las vistas del laboratorio utilice la rueda del mouse.</p></Description>
+          <Image src="/images/paso3.png" alt="Imagen 3" />
+          <Description><p className='en'> use the mouse wheel.</p><p className='es'>Para desplazarse muévase con el dedo en las direcciones que se muestran en las flechas ↑ ↓ → ←.</p></Description>
         </Card>
       </CardContainer>
     </CenteredContainer>
   );
 };
 
-export default ModalAyuda;
+export default ModalAyudaMovil;

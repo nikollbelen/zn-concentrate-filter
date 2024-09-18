@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="Init" type="InitTab" active="false" scrollx="16.366037311894615" scrolly="-151.1750345655737" scale="0.6715938569729647">
+  <tab name="Init" type="InitTab" active="true" scrollx="-99.66861943839478" scrolly="-101.03748327465979" scale="0.676839362028687">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="~k?sHkH7I-Ws;}#RLRUK" x="290" y="30">
       <field name="LOAD_COMP_ASSETS">TRUE</field>
       <field name="FULLSCREEN">FALSE</field>
@@ -107,129 +107,195 @@
         </block>
       </statement>
       <statement name="DO_END">
-        <block type="setHTMLElemStyle" id="^~ue|@[{=N`%!Lp;au};">
-          <field name="PROPERTY">display</field>
-          <field name="PARENT">TRUE</field>
-          <value name="VALUE">
-            <shadow type="displayDropdown" id="iUm`JkmVVa*x$Wx8h`9A">
-              <field name="TEXT">flex</field>
-            </shadow>
-          </value>
-          <value name="ID">
-            <shadow type="text" id="nQkY}Jw/qF(UZIH=DY7+">
-              <field name="TEXT">logo</field>
+        <block type="execScript" id="3Z=d.wU~|KW~^U|QxkrK">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="iVy)bL/,szSH[{H[7o{D">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field name="TEXT" editor-height="11" editor-width="901">// Detectar si es un dispositivo móvil&amp;#10;if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {&amp;#10;    v3d.puzzles.procedures["pantalla_mobil"]();&amp;#10;} else {&amp;#10;    v3d.puzzles.procedures["pantalla_web"]();&amp;#10;}&amp;#10;</field>
             </shadow>
           </value>
           <next>
-            <block type="setHTMLElemStyle" id=":oMf:[DlB{`oQ8G-7n/n">
+            <block type="setHTMLElemStyle" id="^~ue|@[{=N`%!Lp;au};">
               <field name="PROPERTY">display</field>
               <field name="PARENT">TRUE</field>
               <value name="VALUE">
-                <shadow type="displayDropdown" id="0K|sULLr?]FAHZ{YJ+ya">
+                <shadow type="displayDropdown" id="iUm`JkmVVa*x$Wx8h`9A">
                   <field name="TEXT">flex</field>
                 </shadow>
               </value>
               <value name="ID">
-                <shadow type="text" id="{J1OdE6+*L^rBR(U9,PD">
-                  <field name="TEXT">menu</field>
+                <shadow type="text" id="nQkY}Jw/qF(UZIH=DY7+">
+                  <field name="TEXT">logo</field>
                 </shadow>
               </value>
               <next>
-                <block type="setHTMLElemStyle" id="H?0HyzuZ*%?f/xsdy4u`">
+                <block type="setHTMLElemStyle" id=":oMf:[DlB{`oQ8G-7n/n">
                   <field name="PROPERTY">display</field>
                   <field name="PARENT">TRUE</field>
                   <value name="VALUE">
-                    <shadow type="displayDropdown" id="u+ZLwfgc!@u9`wS)F3*;">
+                    <shadow type="displayDropdown" id="0K|sULLr?]FAHZ{YJ+ya">
                       <field name="TEXT">flex</field>
                     </shadow>
                   </value>
                   <value name="ID">
-                    <shadow type="text" id="-+4Ldg9||1X4V(uu%zQ1">
-                      <field name="TEXT">ayudas</field>
+                    <shadow type="text" id="{J1OdE6+*L^rBR(U9,PD">
+                      <field name="TEXT">menu</field>
                     </shadow>
                   </value>
                   <next>
-                    <block type="controls_if" id="VP@bZg~S43?cS5!UR($u">
-                      <mutation else="1"></mutation>
-                      <value name="IF0">
-                        <block type="logic_compare" id="JclN1(!$kdi05AqLnj0v">
-                          <field name="OP">EQ</field>
-                          <value name="A">
-                            <block type="featureAvailable" id="j}Zg|jzBCy-I82Ao08jV">
-                              <field name="FEATURE">MOBILE</field>
-                            </block>
-                          </value>
-                          <value name="B">
-                            <block type="logic_boolean" id="G-N2z+OV+!/cfq1yZM6h">
-                              <field name="BOOL">TRUE</field>
-                            </block>
-                          </value>
-                        </block>
+                    <block type="setHTMLElemStyle" id="H?0HyzuZ*%?f/xsdy4u`">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="displayDropdown" id="u+ZLwfgc!@u9`wS)F3*;">
+                          <field name="TEXT">flex</field>
+                        </shadow>
                       </value>
-                      <statement name="DO0">
-                        <block type="setHTMLElemStyle" id="YAkILcgL3q-}~{[}x3#_">
-                          <field name="PROPERTY">display</field>
-                          <field name="PARENT">TRUE</field>
-                          <value name="VALUE">
-                            <block type="text" id="Q)ar,Wy).hsHs3b.1VQ9">
-                              <field name="TEXT">flex</field>
-                            </block>
-                          </value>
-                          <value name="ID">
-                            <shadow type="text" id="l^%TiI?p@S+7Zg^_.N3u">
-                              <field name="TEXT">demo-modal2</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setHTMLElemStyle" id="slWG;${QY+[Fk*]sDx)o">
-                              <field name="PROPERTY">display</field>
-                              <field name="PARENT">TRUE</field>
-                              <value name="VALUE">
-                                <block type="text" id="e.^q1AYHBHPZR^et+vsL">
-                                  <field name="TEXT">none</field>
-                                </block>
-                              </value>
-                              <value name="ID">
-                                <shadow type="text" id="6^_{MnD.Eepz[L8fD;dk">
-                                  <field name="TEXT">demo-modal</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                      <statement name="ELSE">
-                        <block type="setHTMLElemStyle" id="_3:4kBRm4w5ty_wK[U7e">
-                          <field name="PROPERTY">display</field>
-                          <field name="PARENT">TRUE</field>
-                          <value name="VALUE">
-                            <block type="text" id="}M+KOtS/ec*gWI7z$Lyd">
-                              <field name="TEXT">flex</field>
-                            </block>
-                          </value>
-                          <value name="ID">
-                            <shadow type="text" id="WO~IN)Deh)niC/);P0c/">
-                              <field name="TEXT">demo-modal</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setHTMLElemStyle" id="M||P3yn+OC2(%4G1o[;K">
-                              <field name="PROPERTY">display</field>
-                              <field name="PARENT">TRUE</field>
-                              <value name="VALUE">
-                                <block type="text" id="Fi4/44`vCcz_pvLIr~PP">
-                                  <field name="TEXT">none</field>
-                                </block>
-                              </value>
-                              <value name="ID">
-                                <shadow type="text" id="pDJH8^51PDW2Bl|0?4V7">
-                                  <field name="TEXT">demo-modal2</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
+                      <value name="ID">
+                        <shadow type="text" id="-+4Ldg9||1X4V(uu%zQ1">
+                          <field name="TEXT">ayudas</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="3?VjEUV:2SK2jI*5~u[4" x="1630" y="510">
+      <field name="NAME">pantalla_mobil_horinzontal</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setHTMLElemStyle" id="GO,rb^ytQe.A+C2YX2G+">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <shadow type="displayDropdown" id="#e16;T:#1n6N1NG!(p(L">
+              <field name="TEXT">none</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="i3/Nmkr:8RK*47LlO;a?">
+              <field name="TEXT">aviso_celular</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="L.!j9?]=3/4kmloWq{UK" x="1630" y="630">
+      <field name="NAME">pantalla_mobil_vertical</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setHTMLElemStyle" id="!B@)AgS,lU}{n{]Xp?T)">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <shadow type="displayDropdown" id="Q:=Hx0MqitdM1PMp9p!t">
+              <field name="TEXT">flex</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="r-jGiXpmfo2WPqQOVtMJ">
+              <field name="TEXT">aviso_celular</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="*dW.b4@g^,=o6b.Xe@vQ" x="1630" y="750">
+      <field name="NAME">pantalla_web</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="removeHTMLElement" id="wI*rKLz.`lQy|lE,5PjB">
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="m%lFy#eCQkIqu@:NuckN">
+              <field name="TEXT">ayudaMovil</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="removeHTMLElement" id="E%c7TUk8/U-rXd1:|Dfm">
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="#-jF7_~{iP3%W/u6FH+(">
+                  <field name="TEXT">ayudaMovilContainer</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="aMOicZIwQ6cYaXj6rJa2" x="1630" y="890">
+      <field name="NAME">pantalla_mobil</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_if" id="T8I2np081M[mZSEueN2Q">
+          <value name="IF0">
+            <block type="logic_compare" id="5=lz@CuGHV;05+Oen5fN">
+              <field name="OP">LT</field>
+              <value name="A">
+                <block type="getHTMLElemAttribute" id=":;fcK6fK{mc:d+6~KhhI">
+                  <field name="ATTRIBUTE">innerWidth</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="SHhz2F;$)_8}):JSLw`q">
+                      <field name="TEXT">myElem</field>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="6y^UJGyIA~S?*pl_nS4Q">
+                      <field name="DOM_OBJECT">WINDOW</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="B">
+                <block type="getHTMLElemAttribute" id="EI1}wpz4aLA%*ec2X$$}">
+                  <field name="ATTRIBUTE">innerHeight</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="kaD$q($hZB`8Y@d/By6O">
+                      <field name="TEXT">myElem</field>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="!{RGT5JgJL{SrjCkewU5">
+                      <field name="DOM_OBJECT">WINDOW</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="procedures_callnoreturn" id="o9K_hVh:I=GQP?3tVDZQ">
+              <mutation name="pantalla_mobil_vertical"></mutation>
+            </block>
+          </statement>
+          <next>
+            <block type="execScript" id="?`D/iF,Gy((8n+Hmlr.$">
+              <value name="TEXT">
+                <shadow type="textMultiline" id="s[rx=(suVlyweZe1`o0/">
+                  <field name="HIGHLIGHT_MODE">javascript</field>
+                  <field name="TEXT" editor-height="9" editor-width="901">window.addEventListener('resize', function() {&amp;#10;    if (window.innerWidth &gt; window.innerHeight) {&amp;#10;        v3d.puzzles.procedures["pantalla_mobil_horinzontal"]();&amp;#10;    } else {&amp;#10;        v3d.puzzles.procedures["pantalla_mobil_vertical"]();&amp;#10;    }&amp;#10;});&amp;#10;</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="removeHTMLElement" id="3AT#0^D~wk!9mEr9!Fky">
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="5t0UvU:K/{r?+.%611bp">
+                      <field name="TEXT">ayuda</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="removeHTMLElement" id="~ruDK%DmZb*wJ=(;l7xU">
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text" id="=brz9$dI:crPH@/),{QN">
+                          <field name="TEXT">ayudaContainer</field>
+                        </shadow>
+                      </value>
                     </block>
                   </next>
                 </block>
@@ -240,7 +306,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="general" type="CommonTab" active="false" scrollx="194.33596804433046" scrolly="-121.6922708376174" scale="0.5050679529955184">
+  <tab name="general" type="CommonTab" active="false" scrollx="23.81747436523449" scrolly="-513.3988647460939" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="vh8cXs2Fi_ahboKb]hqj">lang</variable>
       <variable id="Kox+/$.mUs{e]f^sC=5$">sonido</variable>
@@ -434,9 +500,12 @@
                               <field name="PROPERTY">display</field>
                               <field name="PARENT">TRUE</field>
                               <value name="VALUE">
-                                <shadow type="displayDropdown" id="j|{tbR^)]YHDoR*7y%yV">
-                                  <field name="TEXT">flex</field>
+                                <shadow type="displayDropdown" id="=UTY4{7$h,vY:SsNq.@U">
+                                  <field name="TEXT">block</field>
                                 </shadow>
+                                <block type="text" id="8eQ!r5`5@JpDfhEH;87B">
+                                  <field name="TEXT">flex</field>
+                                </block>
                               </value>
                               <value name="ID">
                                 <shadow type="text" id="i!dmIr.(LV}A6yk9DVZx">
@@ -449,9 +518,12 @@
                                   <field name="PROPERTY">display</field>
                                   <field name="PARENT">TRUE</field>
                                   <value name="VALUE">
-                                    <shadow type="displayDropdown" id="47}+H3Bw1~0j@4u#:VAg">
-                                      <field name="TEXT">none</field>
+                                    <shadow type="displayDropdown" id="s:9!?%BVOX]swSAI%Pkw">
+                                      <field name="TEXT">block</field>
                                     </shadow>
+                                    <block type="text" id="l)[bt!b-S`SuY+d/Z=#=">
+                                      <field name="TEXT">none</field>
+                                    </block>
                                   </value>
                                   <value name="ID">
                                     <shadow type="text" id="nudL;YUCVoZcq8gq{21z">
@@ -464,9 +536,12 @@
                                       <field name="PROPERTY">display</field>
                                       <field name="PARENT">FALSE</field>
                                       <value name="VALUE">
-                                        <shadow type="displayDropdown" id="DY8Y``mMbQs3fu##G%jT">
-                                          <field name="TEXT">flex</field>
+                                        <shadow type="displayDropdown" id="D]K~/p~okmNRJ.R-prji">
+                                          <field name="TEXT">block</field>
                                         </shadow>
+                                        <block type="text" id="Bc1Nsf#a}h*(e3mX%{RL">
+                                          <field name="TEXT">flex</field>
+                                        </block>
                                       </value>
                                       <value name="ID">
                                         <shadow type="text" id="6,cE@juY)d^i18wl`:R?">
@@ -479,9 +554,12 @@
                                           <field name="PROPERTY">display</field>
                                           <field name="PARENT">FALSE</field>
                                           <value name="VALUE">
-                                            <shadow type="displayDropdown" id=")Z:Z3I=OMJX{)@79)AMe">
-                                              <field name="TEXT">none</field>
+                                            <shadow type="displayDropdown" id="PN/UeFXrCzX0-mvwDOg!">
+                                              <field name="TEXT">block</field>
                                             </shadow>
+                                            <block type="text" id="`)Iwp,[VwfgU#$kCd7Yg">
+                                              <field name="TEXT">none</field>
+                                            </block>
                                           </value>
                                           <value name="ID">
                                             <shadow type="text" id="j{a_@?m%8I(@w301@V@9">
@@ -527,9 +605,12 @@
                               <field name="PROPERTY">display</field>
                               <field name="PARENT">TRUE</field>
                               <value name="VALUE">
-                                <shadow type="displayDropdown" id="?Yeok$3%x,=5|TO=5o^;">
-                                  <field name="TEXT">flex</field>
+                                <shadow type="displayDropdown" id="XKu~biELIRGi{TFd)+4$">
+                                  <field name="TEXT">block</field>
                                 </shadow>
+                                <block type="text" id="@Xd-CPN~xR]n1Qw1H8G9">
+                                  <field name="TEXT">flex</field>
+                                </block>
                               </value>
                               <value name="ID">
                                 <shadow type="text" id="ao%?ET.]ma?lsz%.|)ta">
@@ -542,9 +623,12 @@
                                   <field name="PROPERTY">display</field>
                                   <field name="PARENT">TRUE</field>
                                   <value name="VALUE">
-                                    <shadow type="displayDropdown" id="nx=JRPb$(+!H}GOk%3at">
-                                      <field name="TEXT">none</field>
+                                    <shadow type="displayDropdown" id="#b}Kx^G$;ct!zaerX~qP">
+                                      <field name="TEXT">block</field>
                                     </shadow>
+                                    <block type="text" id="yqdZ,Jg@-o+z1sFcG;2-">
+                                      <field name="TEXT">none</field>
+                                    </block>
                                   </value>
                                   <value name="ID">
                                     <shadow type="text" id="`Y_H)Ba+l^r=Gc-AJ$H^">
@@ -557,9 +641,12 @@
                                       <field name="PROPERTY">display</field>
                                       <field name="PARENT">FALSE</field>
                                       <value name="VALUE">
-                                        <shadow type="displayDropdown" id="NdQsmtt=+h{V!HwsYN^t">
-                                          <field name="TEXT">flex</field>
+                                        <shadow type="displayDropdown" id="UO++gu-;U)q}IgY|5(t+">
+                                          <field name="TEXT">block</field>
                                         </shadow>
+                                        <block type="text" id="YGR[NYIC6=p#k`5ytM;+">
+                                          <field name="TEXT">flex</field>
+                                        </block>
                                       </value>
                                       <value name="ID">
                                         <shadow type="text" id="XtDVov}sO:zMb12J(b03">
@@ -572,9 +659,12 @@
                                           <field name="PROPERTY">display</field>
                                           <field name="PARENT">FALSE</field>
                                           <value name="VALUE">
-                                            <shadow type="displayDropdown" id="GGjw|IOy{^q{l;KFFGt]">
-                                              <field name="TEXT">none</field>
+                                            <shadow type="displayDropdown" id="R,t{vbCvee.p.6@!JDJJ">
+                                              <field name="TEXT">block</field>
                                             </shadow>
+                                            <block type="text" id="GnlO3wYgBAs.*8,kZRDZ">
+                                              <field name="TEXT">none</field>
+                                            </block>
                                           </value>
                                           <value name="ID">
                                             <shadow type="text" id="bLRMCFN!(?Lt@B8qa({N">
@@ -684,7 +774,7 @@
       </next>
     </block>
   </tab>
-  <tab name="procedures" type="CommonTab" active="false" scrollx="286.80408604578906" scrolly="276.80853962639617" scale="0.31006791028264996">
+  <tab name="procedures" type="CommonTab" active="false" scrollx="286.80408604578906" scrolly="238.75229091764044" scale="0.31006791028264996">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="fqOD1HY1,k]}c6h?ezag">element</variable>
       <variable id=":mo1nyesUxvha5D0Yi.X">boton</variable>
@@ -2171,7 +2261,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="listas" type="CommonTab" active="false" scrollx="1000.135433896136" scrolly="78.99068943360408" scale="0.3768894828730004">
+  <tab name="listas" type="CommonTab" active="false" scrollx="998.0478605747307" scrolly="11.306684486190022" scale="0.3768894828730004">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="14WB?TBcO=^VNl9[H*;6">rodillo_obj</variable>
       <variable id="{%O16B-Ir]M+lmA6g]?;">tuberia_obj</variable>
@@ -3534,7 +3624,7 @@
       </next>
     </block>
   </tab>
-  <tab name="paso1" type="CommonTab" active="false" scrollx="258.75305149257247" scrolly="-42.01600573341227" scale="0.7462153966366275">
+  <tab name="paso1" type="CommonTab" active="false" scrollx="240.5" scrolly="-80.59126283675585" scale="0.7462153966366275">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="rDwtqI|FDedK8Ju1v~kR">animacion_reproducida</variable>
     </variables>
@@ -3634,7 +3724,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="paso2" type="CommonTab" active="false" scrollx="-348.4542541503906" scrolly="7.1706695556640625" scale="0.3">
+  <tab name="paso2" type="CommonTab" active="false" scrollx="-348.4542541503906" scrolly="-111" scale="0.3">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id=";ip9Dw?b/u|Eq=Zz64w:">proceso</variable>
       <variable id="|YvNQcC~:`~Ng^c=E)7V">enfocado</variable>
@@ -5575,7 +5665,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="paso3" type="CommonTab" active="true" scrollx="202.78903198242188" scrolly="307.7567596435547" scale="0.3">
+  <tab name="paso3" type="CommonTab" active="false" scrollx="202.78903198242188" scrolly="307.7567596435547" scale="0.3">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="rDwtqI|FDedK8Ju1v~kR">animacion_reproducida</variable>
       <variable id=";ip9Dw?b/u|Eq=Zz64w:">proceso</variable>

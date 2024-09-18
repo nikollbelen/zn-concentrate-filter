@@ -1520,4 +1520,205 @@
     </block>
   </next>
 </block>
+        </category><category name="hgfhg">
+        <block type="controls_if" xmlns="https://developers.google.com/blockly/xml">
+  <mutation else="1"/>
+  <value name="IF0">
+    <block type="logic_compare">
+      <field name="OP">EQ</field>
+      <value name="A">
+        <block type="featureAvailable">
+          <field name="FEATURE">MOBILE</field>
+        </block>
+      </value>
+      <value name="B">
+        <block type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+    </block>
+  </value>
+  <statement name="DO0">
+    <block type="controls_if">
+      <value name="IF0">
+        <block type="logic_compare">
+          <field name="OP">LT</field>
+          <value name="A">
+            <block type="getHTMLElemAttribute">
+              <field name="ATTRIBUTE">innerWidth</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="DOMObjectSelector">
+                  <field name="DOM_OBJECT">WINDOW</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="B">
+            <block type="getHTMLElemAttribute">
+              <field name="ATTRIBUTE">innerHeight</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="DOMObjectSelector">
+                  <field name="DOM_OBJECT">WINDOW</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="procedures_callnoreturn">
+          <mutation name="pantalla_mobil_vertical"/>
+        </block>
+      </statement>
+      <next>
+        <block type="execScript">
+          <value name="TEXT">
+            <shadow type="textMultiline">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field editor-height="9" editor-width="901" name="TEXT">window.addEventListener('resize', function() {&amp;#10;    if (window.innerWidth &gt; window.innerHeight) {&amp;#10;        v3d.puzzles.procedures[&quot;pantalla_mobil_horinzontal&quot;]();&amp;#10;        console.log('horizontal');&amp;#10;    } else {&amp;#10;        v3d.puzzles.procedures[&quot;pantalla_mobil_vertical&quot;]();&amp;#10;        console.log('vertical');&amp;#10;    }&amp;#10;});&amp;#10;</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="removeHTMLElement">
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT">ayuda</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="removeHTMLElement">
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT">ayudaContainer</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="displayDropdown">
+                          <field name="TEXT">flex</field>
+                        </shadow>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT">logo</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="VALUE">
+                            <shadow type="displayDropdown">
+                              <field name="TEXT">flex</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT">menu</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">TRUE</field>
+                              <value name="VALUE">
+                                <shadow type="displayDropdown">
+                                  <field name="TEXT">flex</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text">
+                                  <field name="TEXT">ayudas</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </statement>
+  <statement name="ELSE">
+    <block type="removeHTMLElement">
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT">ayudaMovil</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="removeHTMLElement">
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text">
+              <field name="TEXT">ayudaMovilContainer</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+  </statement>
+</block>
+        </category><category name="dsds">
+        <block type="procedures_defnoreturn" xmlns="https://developers.google.com/blockly/xml">
+  <field name="NAME">pantalla_mobil_horinzontal</field>
+  <comment h="80" pinned="false" w="160">Describe this function...</comment>
+  <statement name="STACK">
+    <block type="setHTMLElemStyle">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <shadow type="displayDropdown">
+          <field name="TEXT">none</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT">aviso_celular</field>
+        </shadow>
+      </value>
+    </block>
+  </statement>
+</block>
+        </category><category name="bghf">
+        <block type="procedures_defnoreturn" xmlns="https://developers.google.com/blockly/xml">
+  <field name="NAME">pantalla_mobil_vertical</field>
+  <comment h="80" pinned="false" w="160">Describe this function...</comment>
+  <statement name="STACK">
+    <block type="setHTMLElemStyle">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <shadow type="displayDropdown">
+          <field name="TEXT">flex</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT">aviso_celular</field>
+        </shadow>
+      </value>
+    </block>
+  </statement>
+</block>
         </category></xml>
