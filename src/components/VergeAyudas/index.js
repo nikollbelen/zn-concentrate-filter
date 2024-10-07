@@ -305,7 +305,7 @@ const IconButtons = () => {
       </ButtonWrapper>
 
       {/* Sexto botón */}
-      <ButtonWrapper>
+      <ButtonWrapper style={{ display: "none" }}>
         <Description className="content content1" style={{ zIndex: 30 }}>
           <p className='en'>Language</p><p className='es'>Idioma</p>
         </Description>
